@@ -172,7 +172,7 @@ export default function How() {
       <div className="container">
         <div className="how-to-get">
           <div className="how-to-get__pic">
-            <img src={require("../images/present-pic.webp")} />
+            <img src={require("../images/how-to-get-pic.webp")} />
           </div>
           <div className="how-to-get__content">
             <h2 className="ui-caption how-to-get__title">
@@ -180,25 +180,28 @@ export default function How() {
             </h2>
             <ul className="ui-list">
               <li className="ui-list__item standard-text">
-                Оставьте свой номер телефона и адрес электронной почты для того,
-                чтобы получить сертификат на сумму 2000₽ на покупки в OZON
+                Оставьте свой номер телефона и адрес электронной почты для того,
+                чтобы получить сертификат на сумму 1 000 ₽ на покупки в Giftery
               </li>
               <li className="ui-list__item standard-text">
-                С 22 апреля по 30 апреля 2024 года оформляйте кредитную карту
-                «MTS CASHBACK» от МТС Банка, перейдя по ссылке после
-                обязательной регистрации
+                Перейдите на сайт Газпромбанка после обязательной регистрации
+                на этой странице
               </li>
               <li className="ui-list__item standard-text">
-                Оплатите картой покупки на сумму от 500₽
+                Оформите дебетовую карту «Мир»
               </li>
               <li className="ui-list__item standard-text">
-                Сертификат на Ozon придёт в SMS на указанный номер телефона
-                в течение 60 дней после первой покупки на 500 ₽
+                Оплатите картой покупки на сумму от 1 000 ₽
               </li>
               <li className="ui-list__item standard-text">
-                Важно! Вам придёт сертификат только в том случае, если в течение
-                90 дней на момент оформления у вас не было других заявок
-                на кредитную карту MTS CASHBACK
+                Сертификат в Giftery придёт в СМС на указанный номер телефона
+                в течение 60 дней после покупки на сумму от 1 000 ₽
+              </li>
+              <li className="ui-list__item standard-text">
+                Важно! Вам придёт сертификат только в том случае,
+                если у вас нет дебетовых пластиковых карт «Мир» Газпромбанка,
+                а также заявок на них в течение 30 дней на момент оформления
+                дебетовой карты «Мир»
               </li>
             </ul>
           </div>
@@ -207,6 +210,24 @@ export default function How() {
       <div className="registration" id="form">
         <div className="container">
           <div className="registration__content">
+            <div className="registration__important">
+              <h2 class="ui-caption how-to-get__title">Важно!</h2>
+              <ul class="ui-list">
+                <li class="ui-list__item standard-text">
+                  Для получения бонуса карта должна быть оформлена
+                  на тот же номер, что указан в поле «Номер телефона»
+                </li>
+                <li class="ui-list__item standard-text">
+                  После нажатия кнопки «Оформить карту», вы будете
+                  перенаправлены на анкету, которую необходимо заполнить
+                  для получения дебетовой карты и бонуса
+                </li>
+                <li class="ui-list__item standard-text">
+                  При не выполнении всех условий и корректности заполненных
+                  данных бонус начислен не будет
+                </li>
+              </ul>
+            </div>
             <div className="registration__form">
               <form
                 className={`reg-form js-reg-form   ${
@@ -321,9 +342,6 @@ export default function How() {
               >
                 Оформить карту
               </button>
-            </div>
-            <div className="registration__pic">
-              <img src={require("../images/how-pic.webp")} />
             </div>
           </div>
         </div>

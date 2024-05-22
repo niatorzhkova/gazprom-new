@@ -2,13 +2,14 @@
 
 .standard-text {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.3;
+  color: #787c88;
 }
 
 @media (max-width: 1400px) {
   .standard-text {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 @media (max-width: 600px) {
@@ -18,6 +19,10 @@
 }
 .main-banner__img {
   width: 100%;
+  position: absolute;
+  max-width: 690px;
+  right: -186px;
+  top: -80px;
 }
 @media (min-width: 1200px) {
   .main-banner__img {
@@ -30,7 +35,7 @@
 }
 @media (min-width: 600px) {
   .main-banner__img {
-    width: 54%;
+    // width: 54%;
     // position: relative;
     // top: -20px;
     // right: -20px;
@@ -326,6 +331,7 @@
   display: flex;
   flex-direction: column;
   // max-height: 342px;
+  width: 50%;
 }
 @media (max-width: 1919px) {
   .registration__form {
@@ -364,7 +370,7 @@
 @media (min-width: 600px) {
   .main-banner__button {
     display: block;
-    margin-bottom: 43px;
+    margin-bottom: 30px;
   }
 }
 
@@ -409,10 +415,12 @@
   color: #2c3135;
   border-color: #2c3135;
 }
-
+.present__section {
+  padding-bottom: 100px;
+}
 .present {
   display: flex;
-  gap: 10px;
+  gap: 15px;
 }
 .present__left,
 .present__right {
@@ -426,12 +434,36 @@
 }
 
 .present__right {
-  background-image: linear-gradient(180deg, #f4f6fa 60%, #dce0eb 40%);
+  background-image: linear-gradient(180deg, #f4f6fa 62%, #dce0eb 38%);
   border-radius: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
   img {
     max-width: 450px;
+  }
+}
+
+.registration__important {
+  padding: 60px;
+  border-radius: 32px;
+  background-color: var(--formFieldBg);
+  width: 50%;
+  .ui-list__item:before {
+    background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_1188_14234)'%3E%3Cpath d='M5.65833 10.8167L2.18333 7.34167L1 8.51667L5.65833 13.175L15.6583 3.175L14.4833 2L5.65833 10.8167Z' fill='%23fff'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_1188_14234'%3E%3Crect width='16' height='16' fill='white' transform='matrix(-4.37114e-08 -1 -1 4.37114e-08 16 16)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 50% 50%;
+  }
+}
+
+.main-banner-container {
+  position: relative;
+  width: 100%;
+}
+
+.present__left {
+  .standard-text {
+    margin-bottom: 0;
   }
 }
