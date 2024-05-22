@@ -9,7 +9,7 @@ export default function Hero() {
           <div className=" main-banner-container">
             <div className="main-banner__content">
               <div>
-                <h1 className="ui-caption main-banner__title">
+                <h1 className="ui-caption main-banner__title heading">
                   Дебетовая карта «Мир»
                 </h1>
                 <p className="hero__text standard-text">

@@ -15,23 +15,23 @@ export default function How() {
   const inputRef = useRef(null);
 
   useEffect(() => {
-    const url = new URL(window.location.href);
-    if (url.searchParams.size === 0) {
-      url.searchParams.set("aff_id", "67323");
-      url.searchParams.set("offer_id", "5638");
-      url.searchParams.set("p", "1709");
-      url.searchParams.set("erid", "LjN8KWKhz");
-      url.searchParams.set("aff_sub", "1");
-      url.searchParams.set("aff_sub2", "1");
-      window.history.pushState({ path: url.href }, "", url.href);
-    }
+    // const url = new URL(window.location.href);
+    // if (url.searchParams.size === 0) {
+    //   url.searchParams.set("aff_id", "67323");
+    //   url.searchParams.set("offer_id", "5638");
+    //   url.searchParams.set("p", "1709");
+    //   url.searchParams.set("erid", "LjN8KWKhz");
+    //   url.searchParams.set("aff_sub", "1");
+    //   url.searchParams.set("aff_sub2", "1");
+    //   window.history.pushState({ path: url.href }, "", url.href);
+    // }
   }, []);
   useEffect(() => {
     // const encryptedText = AES.encrypt(phoneValue, "rafinad");
-    const url = new URL(window.location.href);
-    // url.searchParams.set("aff_sub6", encryptedText);
-    url.searchParams.set("aff_sub7", "cert");
-    window.history.pushState({ path: url.href }, "", url.href);
+    // const url = new URL(window.location.href);
+    // // url.searchParams.set("aff_sub6", encryptedText);
+    // url.searchParams.set("aff_sub7", "cert");
+    // window.history.pushState({ path: url.href }, "", url.href);
   }, [phoneValue]);
 
   function isValidEmail(email) {
@@ -175,7 +175,7 @@ export default function How() {
             <img src={require("../images/how-to-get-pic.webp")} />
           </div>
           <div className="how-to-get__content">
-            <h2 className="ui-caption how-to-get__title">
+            <h2 className="ui-caption how-to-get__title heading">
               Как получить сертификат?
             </h2>
             <ul className="ui-list">
@@ -197,7 +197,7 @@ export default function How() {
                 Сертификат в Giftery придёт в СМС на указанный номер телефона
                 в течение 60 дней после покупки на сумму от 1 000 ₽
               </li>
-              <li className="ui-list__item standard-text">
+              <li className="ui-list__item standard-text important-sign">
                 Важно! Вам придёт сертификат только в том случае,
                 если у вас нет дебетовых пластиковых карт «Мир» Газпромбанка,
                 а также заявок на них в течение 30 дней на момент оформления
@@ -211,7 +211,7 @@ export default function How() {
         <div className="container">
           <div className="registration__content">
             <div className="registration__important">
-              <h2 class="ui-caption how-to-get__title">Важно!</h2>
+              <h2 class="ui-caption how-to-get__title heading">Важно!</h2>
               <ul class="ui-list">
                 <li class="ui-list__item standard-text">
                   Для получения бонуса карта должна быть оформлена

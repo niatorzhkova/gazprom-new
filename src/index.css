@@ -21,7 +21,10 @@ a {
 .ui-button:hover {
   filter: grayscale(0.2);
   transition: 0.3s;
-  background-color: #cf1e1e;
+  background-color: #d15e0a;
+}
+.ui-button:active {
+  background-color: #b34000;
 }
 @media (max-width: 1024px) {
   .ui-button {
@@ -56,6 +59,9 @@ a {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
 }
 .ui-list__item {
   display: flex;
@@ -102,10 +108,10 @@ a {
 }
 
 .ui-checkbox__box {
-  background: var(--accentColor);
+  border: 1px solid var(--accentColor);
   border-radius: 4px;
-  width: 18px;
-  height: 18px;
+  width: 16px;
+  height: 16px;
   display: block;
   margin-right: 10px;
   flex-shrink: 0;
@@ -126,6 +132,7 @@ a {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: 50% 50%;
+  background-color: var(--accentColor);
 }
 .ui-checkbox__error {
   font-size: 13px;
@@ -243,6 +250,7 @@ a {
 :root {
   --primaryColor: #1d1d1b;
   --accentColor: #ef7c00;
+  --headingColor: #1e222e;
   --siteWidth: 1180px;
   --formFieldBg: #f4f6fa;
   --formBorderRadius: 16px;
@@ -470,7 +478,6 @@ img {
 }
 .how-to-get__pic,
 .how-to-get__content {
-  padding: 65px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0% 50%;
@@ -496,6 +503,7 @@ img {
 }
 
 .how-to-get__content {
+  padding: 65px;
   width: 58%;
   max-width: 1155px;
 }
@@ -517,7 +525,7 @@ img {
 }
 @media (min-width: 600px) {
   .registration {
-    margin-top: 65px;
+    margin-top: 100px;
   }
 }
 .registration__title {
@@ -580,7 +588,7 @@ img {
 }
 .reg-form__agree {
   font-size: 20px;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 @media (max-width: 1140px) {
   .reg-form__agree {
@@ -595,13 +603,15 @@ img {
   }
 }
 .reg-form__button {
-  margin-top: 23px;
   position: relative;
+  width: 100%;
+  margin-top: 26px;
+  font-size: 20px;
 }
 @media (max-width: 1920px) {
   .reg-form__button {
-    margin-top: 20px;
-    font-size: 18px;
+    margin-top: 26px;
+    font-size: 20px;
   }
 }
 @media (max-width: 1200px) {
@@ -637,9 +647,9 @@ img {
   }
 }
 .footer {
-  padding: 27px 0;
+  padding: 78px 0 20px;
   font-size: 16px;
-  line-height: 1;
+  line-height: 1.57;
   font-weight: 300;
 }
 
