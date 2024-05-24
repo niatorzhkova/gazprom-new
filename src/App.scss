@@ -19,10 +19,19 @@
 }
 .main-banner__img {
   width: 100%;
-  position: absolute;
   max-width: 690px;
   right: -186px;
   top: -80px;
+}
+@media (min-width: 1380px) {
+  .main-banner__img {
+    // width: 54%;
+    // position: relative;
+    // top: -64px;
+    // right: 7px;
+    // height: fit-content;
+    position: absolute;
+  }
 }
 @media (min-width: 1200px) {
   .main-banner__img {
@@ -342,13 +351,13 @@
 @media (max-width: 1200px) {
   .registration__form {
     max-width: 59%;
-    padding: 20px 30px;
+    padding: 20px;
   }
 }
 @media (max-width: 1050px) {
   .registration__form {
     max-width: 52%;
-    padding: 23px 25px;
+    padding: 20px;
   }
 }
 @media (max-width: 900px) {
@@ -418,19 +427,47 @@
 .present__section {
   padding-bottom: 100px;
 }
+@media (max-width: 600px) {
+  .present__section {
+    padding-bottom: 12px;
+  }
+}
 .present {
   display: flex;
   gap: 15px;
+}
+@media (max-width: 600px) {
+  .present {
+    flex-direction: column;
+  }
 }
 .present__left,
 .present__right {
   width: 50%;
 }
 
+@media (max-width: 600px) {
+  .present__left {
+    padding: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .present__left,
+  .present__right {
+    width: 100%;
+  }
+}
+
 .present__left {
   background-color: var(--formFieldBg);
   border-radius: 32px;
   padding: 60px;
+}
+
+@media (max-width: 1200px) {
+  .present__left {
+    padding: 20px;
+  }
 }
 
 .present__right {
@@ -442,6 +479,11 @@
   img {
     max-width: 450px;
     width: 100%;
+  }
+}
+@media (max-width: 1200px) {
+  .present__right {
+    background-image: linear-gradient(180deg, #f4f6fa 55%, #dce0eb 45%);
   }
 }
 
@@ -457,10 +499,27 @@
     background-size: 50% 50%;
   }
 }
+@media (max-width: 1200px) {
+  .registration__important {
+    padding: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .registration__important {
+    padding: 20px;
+  }
+}
+@media (max-width: 1200px) {
+  .registration__important,
+  .registration__form {
+    width: 100%;
+  }
+}
 
 .main-banner-container {
   position: relative;
   width: 100%;
+  align-items: center;
 }
 
 .present__left {

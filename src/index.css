@@ -46,7 +46,7 @@ a {
 
 @media (max-width: 1024px) {
   .ui-caption {
-    font-size: 32px;
+    font-size: 28px;
   }
 }
 @media (max-width: 600px) {
@@ -174,7 +174,7 @@ a {
 }
 .ui-input__error {
   font-size: 13px;
-  color: var(--accentColor);
+  color: red;
   line-height: 1.2;
   display: inline-block;
   position: absolute;
@@ -370,6 +370,8 @@ img {
 @media (max-width: 1024px) {
   .main-banner {
     font-size: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
   }
 }
 @media (max-width: 600px) {
@@ -379,7 +381,7 @@ img {
     padding-bottom: 25px;
     border-radius: 24px;
     padding-left: 20px;
-    padding-right: 25px;
+    padding-right: 20px;
     margin-top: 20px;
   }
 }
@@ -406,6 +408,7 @@ img {
 @media (max-width: 600px) {
   .main-banner__title {
     margin-bottom: 10px;
+    font-size: 32px;
   }
 }
 
@@ -447,6 +450,11 @@ img {
     min-height: 220px;
   }
 }
+@media (max-width: 600px) {
+  .benefit-item {
+    min-height: 125px;
+  }
+}
 
 .benefit-item__img {
   max-width: 90px;
@@ -484,10 +492,17 @@ img {
   background: var(--formFieldBg);
   border-radius: 32px;
 }
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
   .how-to-get {
     padding: 16px 20px;
     border-radius: 24px;
+  }
+} */
+@media (max-width: 600px) {
+  .how-to-get {
+    padding: 16px 0px 8px;
+    border-radius: 24px;
+    flex-direction: column-reverse;
   }
 }
 
@@ -496,9 +511,23 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
   img {
-    max-width: 480px;
+    max-width: 229px;
     width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .how-to-get__pic {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    img {
+      max-width: 229px;
+      width: 100%;
+    }
   }
 }
 
@@ -506,6 +535,16 @@ img {
   padding: 65px;
   width: 58%;
   max-width: 1155px;
+}
+@media (max-width: 1200px) {
+  .how-to-get__content {
+    padding: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .how-to-get__content {
+    width: 100%;
+  }
 }
 .how-to-get__title {
   margin-bottom: 22px;
@@ -665,5 +704,5 @@ img {
 }
 
 .red {
-  border-color: var(--accentColor) !important;
+  border-color: red !important;
 }

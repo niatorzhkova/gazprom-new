@@ -7,7 +7,7 @@ export default function Present({}) {
         <div className="container">
           <div className="present">
             <div className="present__left">
-              <h2 class="ui-caption how-to-get__title heading">
+              <h2 className="ui-caption how-to-get__title heading">
                 Универсальная подарочная карта Giftery Сard
               </h2>
               <p className="standard-text">

@@ -211,18 +211,18 @@ export default function How() {
         <div className="container">
           <div className="registration__content">
             <div className="registration__important">
-              <h2 class="ui-caption how-to-get__title heading">Важно!</h2>
-              <ul class="ui-list">
-                <li class="ui-list__item standard-text">
+              <h2 className="ui-caption how-to-get__title heading">Важно!</h2>
+              <ul className="ui-list">
+                <li className="ui-list__item standard-text">
                   Для получения бонуса карта должна быть оформлена
                   на тот же номер, что указан в поле «Номер телефона»
                 </li>
-                <li class="ui-list__item standard-text">
+                <li className="ui-list__item standard-text">
                   После нажатия кнопки «Оформить карту», вы будете
                   перенаправлены на анкету, которую необходимо заполнить
                   для получения дебетовой карты и бонуса
                 </li>
-                <li class="ui-list__item standard-text">
+                <li className="ui-list__item standard-text">
                   При не выполнении всех условий и корректности заполненных
                   данных бонус начислен не будет
                 </li>
