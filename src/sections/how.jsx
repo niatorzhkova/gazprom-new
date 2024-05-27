@@ -268,7 +268,7 @@ export default function How() {
                   <div className="reg-form__field">
                     <div className="ui-input">
                       <label className="input__label ui-checkbox__text">
-                        Адрес электронной почты
+                        Электронная почта
                       </label>
                       <input
                         className={`ui-input__input js-input-code ${

@@ -6,13 +6,13 @@ export default function Footer() {
       {" "}
       <footer className="footer">
         <div className="container">
-          {/* <a
+          <a
             target="_blank"
             rel="noreferrer noopenner"
-            href="https://rafinad.io/download-file/pravila-provedeniya-konkursa"
-          > */}
-          <p className="rules__header">Правила акции</p>
-          {/* </a> */}
+            href="https://rafinad.io/download-file/pravila-akcii-gazprom"
+          >
+            <p className="rules__header">Правила акции</p>
+          </a>
           <div>
             <p>
               Акция «Оформите дебетовую карту «Мир» от Газпромбанка и получите в
