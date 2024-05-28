@@ -15,23 +15,29 @@ export default function How() {
   const inputRef = useRef(null);
 
   useEffect(() => {
-    // const url = new URL(window.location.href);
-    // if (url.searchParams.size === 0) {
-    //   url.searchParams.set("aff_id", "67323");
-    //   url.searchParams.set("offer_id", "5638");
-    //   url.searchParams.set("p", "1709");
-    //   url.searchParams.set("erid", "LjN8KWKhz");
-    //   url.searchParams.set("aff_sub", "1");
-    //   url.searchParams.set("aff_sub2", "1");
-    //   window.history.pushState({ path: url.href }, "", url.href);
-    // }
+    const url = new URL(window.location.href);
+    if (url.searchParams.size === 0) {
+      url.searchParams.set("aff_id", "67323");
+      url.searchParams.set("offer_id", "5638");
+      url.searchParams.set("p", "1709");
+      url.searchParams.set("erid", "LjN8KWKhz");
+      url.searchParams.set("aff_sub", "1");
+      url.searchParams.set("aff_sub2", "1");
+      url.searchParams.set("sub_id5", "rafinad");
+      window.history.pushState({ path: url.href }, "", url.href);
+    }
   }, []);
   useEffect(() => {
-    // const encryptedText = AES.encrypt(phoneValue, "rafinad");
-    // const url = new URL(window.location.href);
-    // // url.searchParams.set("aff_sub6", encryptedText);
-    // url.searchParams.set("aff_sub7", "cert");
-    // window.history.pushState({ path: url.href }, "", url.href);
+    const text = enc.Utf8.parse(phoneValue);
+    const encryptedText = enc.Hex.stringify(text);
+    // const encodedWord = enc.Hex.parse(encryptedText);
+    // const decrypted = enc.Utf8.stringify(encodedWord);
+
+    const url = new URL(window.location.href);
+    url.searchParams.set("aff_sub6", encryptedText);
+    url.searchParams.set("aff_sub7", "cert");
+    url.searchParams.set("sub_id5", "rafinad");
+    window.history.pushState({ path: url.href }, "", url.href);
   }, [phoneValue]);
 
   function isValidEmail(email) {
@@ -139,6 +145,7 @@ export default function How() {
                 click_id: click_id,
                 get_params: getParamsStr,
               };
+
               setError(false);
               const response = fetch(
                 "https://rafinad.io/api/v1/create_landing_data/",
@@ -155,7 +162,7 @@ export default function How() {
                   setIsSubmitting(false);
                 } else {
                   setIsSubmitting(false);
-                  window.location = `https://go.leadgid.ru/aff_c${getParamsStr}`;
+                  window.location = `https://icontext.scaletrk.com/click?o=8&a=3&link_id=111&sub_id1=${click_id}&sub_id4=${wm_id}&sub_id5=rafinad&aff_click_id=${click_id}`;
                 }
               });
             });
