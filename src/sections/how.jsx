@@ -138,7 +138,7 @@ export default function How() {
               let getParamsStr = window.location.search;
               const { aff_sub: click_id, aff_sub2: wm_id } = getGetParams();
               const data = {
-                landing: "2",
+                landing: "3",
                 email: emailValue,
                 phone_number: phoneValue,
                 wm_id: wm_id,
