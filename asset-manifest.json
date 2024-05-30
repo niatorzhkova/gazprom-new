@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/gazprom-new/static/css/main.3a61ba32.css",
-    "main.js": "/gazprom-new/static/js/main.12724a8c.js",
+    "main.js": "/gazprom-new/static/js/main.faad1158.js",
     "static/media/how-to-get-pic.webp": "/gazprom-new/static/media/how-to-get-pic.03176a8057ab14c89f2d.webp",
     "static/media/hero-pic.webp": "/gazprom-new/static/media/hero-pic.4089678c39e342c8cdfc.webp",
     "static/media/present-pic.webp": "/gazprom-new/static/media/present-pic.d369a073478896dc281a.webp",
@@ -12,10 +12,10 @@
     "index.html": "/gazprom-new/index.html",
     "static/media/1.svg": "/gazprom-new/static/media/1.48c2a5400bdf9dbe1285.svg",
     "main.3a61ba32.css.map": "/gazprom-new/static/css/main.3a61ba32.css.map",
-    "main.12724a8c.js.map": "/gazprom-new/static/js/main.12724a8c.js.map"
+    "main.faad1158.js.map": "/gazprom-new/static/js/main.faad1158.js.map"
   },
   "entrypoints": [
     "static/css/main.3a61ba32.css",
-    "static/js/main.12724a8c.js"
+    "static/js/main.faad1158.js"
   ]
 }
